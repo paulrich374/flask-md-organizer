@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize Files</title>
+</head>
+<body>
+    <h1>Organize Your Files</h1>
+    <form action="/organize" method="post">
+        <label for="category">Choose a category:</label>
+        <select id="category" name="category">
+            <option value="Documents">Documents</option>
+            <option value="Images">Images</option>
+            <option value="Videos">Videos</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+        <label for="tags">Add tags:</label>
+        <input type="text" id="tags" name="tags" placeholder="Comma separated tags">
+        <br><br>
+        <input type="submit" value="Organize">
+    </form>
+</body>
+</html>
