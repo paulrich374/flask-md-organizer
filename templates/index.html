@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="markdown-grid">
+        {% for file in markdown_files %}
+            <div class="markdown-item">
+                <h2>{{ file.title }}</h2>
+                <div>{{ file.content | safe }}</div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
